@@ -1,0 +1,6 @@
+rootProject.name = 'share'
+include('')
+include 'order-comsumer'
+include 'order-provider'
+include 'order-api'
+
