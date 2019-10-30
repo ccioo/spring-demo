@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.taike'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':common')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+}

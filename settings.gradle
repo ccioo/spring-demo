@@ -1,6 +1,17 @@
 rootProject.name = 'share'
-include('')
+
+/*业务-订单模块*/
 include 'order-comsumer'
 include 'order-provider'
 include 'order-api'
+
+/*业务-营销模块*/
+include 'market-api'
+include 'market-comsumer'
+include 'market-provider'
+
+/*监控模块*/
+include 'tools-eureka'
+include 'tools-gateway'
+include 'common'
 
