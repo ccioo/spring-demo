@@ -9,6 +9,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka.main" target="1.8" />
+      <module name="eureka.test" target="1.8" />
       <module name="share.eureka.main" target="1.8" />
       <module name="share.eureka.test" target="1.8" />
       <module name="share.eurekaServer.main" target="1.8" />
