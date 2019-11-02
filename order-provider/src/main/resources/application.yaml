@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: order-provider
+server:
+  port: 5555

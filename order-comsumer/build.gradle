@@ -1,17 +1,14 @@
-plugins {
-    id 'java'
-}
-
-group 'com.taike'
-version '0.0.1-SNAPSHOT'
-
-sourceCompatibility = 1.8
+group = 'com.taike'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
+
 dependencies {
-    compile project(':order-api')
-    compile project(':common')
+	compile project(':order-api')
+	compile project(':common')
 }
+

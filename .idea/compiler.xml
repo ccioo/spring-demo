@@ -17,6 +17,10 @@
       <module name="share.eurekaServer.test" target="1.8" />
       <module name="share.monitor.main" target="1.8" />
       <module name="share.monitor.test" target="1.8" />
+      <module name="share.order-comsumer.main" target="1.8" />
+      <module name="share.order-comsumer.test" target="1.8" />
+      <module name="share.order-provider.main" target="1.8" />
+      <module name="share.order-provider.test" target="1.8" />
       <module name="share.tools-monitor.main" target="1.8" />
       <module name="share.tools-monitor.test" target="1.8" />
       <module name="tools-eureka" target="1.8" />
