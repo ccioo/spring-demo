@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38c2ca1b-eed6-4692-ba37-c2519ea1fe4e" name="Default Changelist" comment="" />
+    <list default="true" id="38c2ca1b-eed6-4692-ba37-c2519ea1fe4e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -33,6 +36,15 @@
     <ignored path="$PROJECT_DIR$/tools-gateway/build/" />
     <ignored path="$PROJECT_DIR$/common/.gradle/" />
     <ignored path="$PROJECT_DIR$/common/build/" />
+    <ignored path="$PROJECT_DIR$/common/out/" />
+    <ignored path="$PROJECT_DIR$/market-api/out/" />
+    <ignored path="$PROJECT_DIR$/market-comsumer/out/" />
+    <ignored path="$PROJECT_DIR$/market-provider/out/" />
+    <ignored path="$PROJECT_DIR$/order-api/out/" />
+    <ignored path="$PROJECT_DIR$/order-comsumer/out/" />
+    <ignored path="$PROJECT_DIR$/order-provider/out/" />
+    <ignored path="$PROJECT_DIR$/tools-eureka/out/" />
+    <ignored path="$PROJECT_DIR$/tools-gateway/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,10 +136,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="319" />
-    <option name="y" value="530" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="318" />
+    <option name="y" value="529" />
+    <option name="width" value="1401" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -137,6 +149,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,8 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +172,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/market-comsumer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -271,6 +283,7 @@
       <updated>1572262314893</updated>
       <workItem from="1572262316409" duration="13438000" />
       <workItem from="1572404976961" duration="2029000" />
+      <workItem from="1572708692840" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="第一次推送">
       <created>1572263541624</created>
@@ -297,13 +310,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15467000" />
+    <option name="totallyTimeSpent" value="16069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1668455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16976556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -320,7 +332,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.44160178" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19888888" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30195382" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -333,7 +345,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.10407725" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.17623281" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -382,13 +394,7 @@
     <entry file="file://$PROJECT_DIR$/monitor/settings.gradle" />
     <entry file="file://$PROJECT_DIR$/monitor/build.gradle" />
     <entry file="file://$PROJECT_DIR$/monitor/src/main/java/com/taike/eureka/EurekaApplication.java" />
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.1.6.RELEASE/5422732136c0b3db089fcd80f69f8ffeffc7106b/spring-boot-actuator-2.1.6.RELEASE-sources.jar!/org/springframework/boot/actuate/amqp/RabbitHealthIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.1.6.RELEASE/5422732136c0b3db089fcd80f69f8ffeffc7106b/spring-boot-actuator-2.1.6.RELEASE-sources.jar!/org/springframework/boot/actuate/amqp/RabbitHealthIndicator.java" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -396,20 +402,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-server/2.0.1.RELEASE/20be6f77ee18643caf3cf53b10074813b2f270fb/spring-cloud-netflix-eureka-server-2.0.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/eureka/server/EnableEurekaServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.6.RELEASE/cd87ebca4cb4f40ace39540e119173a3922933be/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-server/2.0.1.RELEASE/20be6f77ee18643caf3cf53b10074813b2f270fb/spring-cloud-netflix-eureka-server-2.0.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/eureka/server/EnableEurekaServer.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.6.RELEASE/cd87ebca4cb4f40ace39540e119173a3922933be/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java" />
     <entry file="file://$PROJECT_DIR$/market-provider/src/main/java/com/taike/market/MarketProviderApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -508,69 +502,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/taike/common/x.java" />
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-core/1.9.3/b2f8929e6c5f338fa3813ca96afdb27b994aa24f/eureka-core-1.9.3-sources.jar!/com/netflix/eureka/EurekaServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4105">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-server/2.0.1.RELEASE/20be6f77ee18643caf3cf53b10074813b2f270fb/spring-cloud-netflix-eureka-server-2.0.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerConfigBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="330" column="16" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/DiscoveryClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="1630" column="15" selection-start-line="1630" selection-start-column="15" selection-end-line="1630" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/shared/transport/EurekaHttpClients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="268" column="24" selection-start-line="268" selection-start-column="24" selection-end-line="268" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/LeaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-ec2/1.11.336/79163024a8755fb1563c74e7cf2bc91439f1223e/aws-java-sdk-ec2-1.11.336-sources.jar!/com/amazonaws/services/ec2/model/InstanceState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4271">
-          <caret line="410" column="42" lean-forward="true" selection-start-line="410" selection-start-column="42" selection-end-line="410" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/shared/resolver/aws/ConfigClusterResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/providers/EurekaConfigBasedInstanceInfoProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/InstanceInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="294" selection-start-line="294" selection-end-line="294" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-core/1.9.3/b2f8929e6c5f338fa3813ca96afdb27b994aa24f/eureka-core-1.9.3-sources.jar!/com/netflix/eureka/EurekaServerConfig.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-server/2.0.1.RELEASE/20be6f77ee18643caf3cf53b10074813b2f270fb/spring-cloud-netflix-eureka-server-2.0.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerConfigBean.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/DiscoveryClient.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/shared/transport/EurekaHttpClients.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/LeaseInfo.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-ec2/1.11.336/79163024a8755fb1563c74e7cf2bc91439f1223e/aws-java-sdk-ec2-1.11.336-sources.jar!/com/amazonaws/services/ec2/model/InstanceState.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/discovery/shared/resolver/aws/ConfigClusterResolver.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/providers/EurekaConfigBasedInstanceInfoProvider.java" />
+    <entry file="jar://D:/dependencies/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.9.3/e9bd13f8d5f72f5d4581343885cfb1aa4800f113/eureka-client-1.9.3-sources.jar!/com/netflix/appinfo/InstanceInfo.java" />
     <entry file="file://$PROJECT_DIR$/common/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
