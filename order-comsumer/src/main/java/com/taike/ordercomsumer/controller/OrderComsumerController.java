@@ -1,6 +1,7 @@
 package com.taike.ordercomsumer.controller;
 
-import com.taike.order.service.OrderPayService1;
+import com.taike.order.service.iservice.IOrderPayService;
+import com.taike.order.service.vo.AlipayVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,10 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderComsumerController {
 
     @Autowired
-    OrderPayService1 orderPayService1;
+    IOrderPayService orderPayService1;
 
-    @RequestMapping(value = "/pay1")
-    public String cumsumer() {
-        return orderPayService1.pay();
+    @RequestMapping(value = "/alipay")
+    public String alipay(AlipayVO alipayVO) {
+        return orderPayService1.alipay(alipayVO);
+    }
+
+    @RequestMapping(value = "/weixinpay")
+    public String weixin() {
+        return orderPayService1.weixinpay();
     }
 }

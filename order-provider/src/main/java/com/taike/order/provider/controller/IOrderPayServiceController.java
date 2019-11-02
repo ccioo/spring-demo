@@ -1,13 +1,13 @@
 package com.taike.order.provider.controller;
 
-import com.taike.order.service.OrderPayService;
+import com.taike.order.service.iservice.IOrderPayService;
 import com.taike.order.service.vo.AlipayVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-public class OrderPayServiceController implements OrderPayService {
+public class IOrderPayServiceController implements IOrderPayService {
 
 
     @Override
