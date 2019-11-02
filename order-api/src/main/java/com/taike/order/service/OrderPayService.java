@@ -17,5 +17,4 @@ public interface OrderPayService {
     @RequestMapping(value = "alipay2", method = RequestMethod.POST)
     String alipay(@RequestBody AlipayVO alipayVO);
 
-
 }
