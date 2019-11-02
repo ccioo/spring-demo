@@ -13,4 +13,6 @@ repositories {
 
 dependencies {
     compile project(':common')
+    compile('cn.springcloud.feign:venus-cloud-starter-feign:1.0.0')
+
 }

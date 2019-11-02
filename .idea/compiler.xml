@@ -2,35 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eureka.main" target="1.8" />
-      <module name="eureka.test" target="1.8" />
-      <module name="share.eureka.main" target="1.8" />
-      <module name="share.eureka.test" target="1.8" />
-      <module name="share.eurekaServer.main" target="1.8" />
-      <module name="share.eurekaServer.test" target="1.8" />
-      <module name="share.monitor.main" target="1.8" />
-      <module name="share.monitor.test" target="1.8" />
-      <module name="share.order-comsumer.main" target="1.8" />
-      <module name="share.order-comsumer.test" target="1.8" />
-      <module name="share.order-provider.main" target="1.8" />
-      <module name="share.order-provider.test" target="1.8" />
-      <module name="share.tools-monitor.main" target="1.8" />
-      <module name="share.tools-monitor.test" target="1.8" />
-      <module name="tools-eureka" target="1.8" />
-      <module name="tools-monitor" target="1.8" />
-    </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tools-eureka" options="-parameters" />
-      <module name="tools-monitor" options="-parameters" />
-    </option>
   </component>
 </project>
