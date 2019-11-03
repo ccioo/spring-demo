@@ -12,11 +12,15 @@ repositories {
 }
 
 dependencies {
-    //springcloud 系列
+    // spring cloud 系列
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-openfeign-core')
-    compile('cn.springcloud.feign:venus-cloud-starter-feign:1.0.0')
+    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
     compile('org.springframework:spring-web')
+    compile('cn.springcloud.feign:venus-cloud-starter-feign:1.0.0')
+
+    //监控
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 
     //swagger
     compile('io.springfox:springfox-swagger2:2.5.0')
@@ -24,7 +28,6 @@ dependencies {
 
     //优化代码
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
-
 
 
 }

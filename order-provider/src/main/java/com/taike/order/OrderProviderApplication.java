@@ -1,4 +1,4 @@
-package com.taike.order.provider;
+package com.taike.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

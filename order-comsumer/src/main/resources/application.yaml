@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: order-comsumer
+server:
+  port: 4444
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  #eureka.instance.prefer-ip-address  表示将自己的IP注册到Eureka Server上，
+  #如果不配置,会将当前服务提供者所在的主机名注册到Eureka Server上。
+  instance:
+    prefer-ip-address: true
+
+#负载均衡相关配置
+order-provider:
+  ribbon:
+    ConnectTimeout: 3000
+    ReadTimeout: 60000
+    #对第一次请求的服务的重试次数
+    MaxAutoRetries: 1
+    #要重试的下一个服务的最大数量（不包括第一个服务）
+    MaxAutoRetriesNextServer: 1
+    OkToRetryOnAllOperations: true
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon:
+  eager-load:
+    enabled: true
+    clients: order-provider
+
+
+
+
+
+
+

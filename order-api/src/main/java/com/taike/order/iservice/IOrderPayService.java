@@ -1,6 +1,6 @@
-package com.taike.order.service.iservice;
+package com.taike.order.iservice;
 
-import com.taike.order.service.vo.AlipayVO;
+import com.taike.order.vo.AlipayVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface IOrderPayService {
 
 
-    @RequestMapping(value = "alipay2", method = RequestMethod.POST)
+    @RequestMapping(value = "/alipay", method = RequestMethod.POST)
     String alipay(@RequestBody AlipayVO alipayVO);
 
 
-    @RequestMapping(value = "weixinpay2", method = RequestMethod.GET)
+    @RequestMapping(value = "/weixinpay", method = RequestMethod.GET)
     String weixinpay();
 
 }

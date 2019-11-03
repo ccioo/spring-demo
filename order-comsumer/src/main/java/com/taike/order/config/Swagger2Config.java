@@ -1,4 +1,4 @@
-package com.taike.ordercomsumer.config;
+package com.taike.order.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class Swagger2Config {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
                 .apis(RequestHandlerSelectors
-                        .basePackage("cn.springcloud.book.feign.controller"))
+                        .basePackage("com.taike.order.controller"))
                 .paths(PathSelectors.any()).build();
     }
 

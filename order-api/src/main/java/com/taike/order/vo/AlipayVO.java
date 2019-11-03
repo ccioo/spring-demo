@@ -1,4 +1,4 @@
-package com.taike.order.service.vo;
+package com.taike.order.vo;
 
 import lombok.Data;
 import lombok.Getter;

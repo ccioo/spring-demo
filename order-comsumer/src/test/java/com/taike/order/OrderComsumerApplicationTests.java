@@ -1,4 +1,4 @@
-package com.taike.ordercomsumer;
+package com.taike.order;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.taike.ordercomsumer.config;
+package com.taike.order.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
