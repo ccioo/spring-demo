@@ -22,3 +22,4 @@ spring:
 ribbon:
   eager-load:
     enabled: true
+    clients: order-comsumer,order-provider,market-comsumer,market-provider

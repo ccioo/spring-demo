@@ -1,0 +1,24 @@
+group = 'com.taike'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //spring cloud 组件
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-turbine')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

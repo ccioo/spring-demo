@@ -13,5 +13,6 @@ include 'market-provider'
 /*监控模块*/
 include 'tools-eureka'
 include 'tools-gateway'
+include 'tools-turbine'
 include 'common'
 
