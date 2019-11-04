@@ -1,4 +1,4 @@
-package com.taike.order.interceptor;
+package com.taike.common.interceptor;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
