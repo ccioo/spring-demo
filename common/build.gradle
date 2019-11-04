@@ -33,3 +33,8 @@ dependencies {
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
 
 }
+
+jar {
+    enabled = true
+}
+

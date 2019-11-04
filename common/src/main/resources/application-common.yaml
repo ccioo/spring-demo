@@ -1,0 +1,5 @@
+hystrix:
+  metrics:
+    enabled: true
+    polling-interval-ms: 500
+
