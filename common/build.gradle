@@ -12,6 +12,9 @@ repositories {
 }
 
 dependencies {
+    //自定义起步依赖
+    compile project(':springcloud-boot-starter')
+
     // spring cloud 系列
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-openfeign-core')
@@ -30,6 +33,5 @@ dependencies {
 
     //优化代码
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
-
 
 }
