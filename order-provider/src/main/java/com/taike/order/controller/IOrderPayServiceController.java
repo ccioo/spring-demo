@@ -1,5 +1,6 @@
 package com.taike.order.controller;
 
+import com.netflix.ribbon.proxy.annotation.Hystrix;
 import com.taike.order.iservice.IOrderPayService;
 import com.taike.order.vo.AlipayVO;
 import lombok.extern.slf4j.Slf4j;
