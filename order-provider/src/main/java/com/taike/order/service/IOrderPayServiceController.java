@@ -1,4 +1,4 @@
-package com.taike.order.controller;
+package com.taike.order.service;
 
 import com.netflix.ribbon.proxy.annotation.Hystrix;
 import com.taike.order.iservice.IOrderPayService;
