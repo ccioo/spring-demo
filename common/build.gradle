@@ -16,8 +16,10 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-openfeign-core')
     compile('org.springframework.cloud:spring-cloud-starter-openfeign')
-    compile('org.springframework:spring-web')
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+    
     compile('cn.springcloud.feign:venus-cloud-starter-feign:1.0.0')
+    compile('org.springframework:spring-web')
 
     //监控
     compile('org.springframework.boot:spring-boot-starter-actuator')
