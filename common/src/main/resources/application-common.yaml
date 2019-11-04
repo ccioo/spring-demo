@@ -3,3 +3,22 @@ hystrix:
     enabled: true
     polling-interval-ms: 500
 
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  cloud:
+    circuit:
+      breaker:
+        enabled: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      force-request: true
+      force-response: true
+
+ribbon:
+  eager-load:
+    enabled: true
