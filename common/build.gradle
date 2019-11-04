@@ -32,6 +32,7 @@ dependencies {
     //优化代码
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
 
+    compile('org.springframework.boot:spring-boot-starter-test')
 }
 
 jar {
