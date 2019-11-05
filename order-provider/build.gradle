@@ -4,6 +4,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     mavenCentral()
 }
 
@@ -13,6 +14,9 @@ dependencies {
     compile project(':common')
 
     compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+
+    compile group: 'com.alibaba.boot', name: 'nacos-config-spring-boot-starter', version: '0.2.1'
+
     compile('org.springframework.boot:spring-boot-starter-actuator')
 }
 

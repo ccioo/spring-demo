@@ -1,9 +1,10 @@
 spring:
   application:
     name: order-provider
+
+
 server:
   port: 5555
-
 eureka:
   client:
     serviceUrl:
@@ -29,3 +30,10 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+useLocalCache: true
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    namespace: cda78a32-b526-4a35-b1cd-c131db7ff28d
+    enabled: true
