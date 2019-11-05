@@ -14,5 +14,9 @@ include 'market-provider'
 include 'tools-eureka'
 include 'tools-gateway'
 include 'tools-turbine'
+include 'tools-dashboard'
+
+
+
 include 'common'
 

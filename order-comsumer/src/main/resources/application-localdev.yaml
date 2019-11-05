@@ -24,12 +24,28 @@ order-provider:
     MaxAutoRetriesNextServer: 1
     OkToRetryOnAllOperations: true
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
 ribbon:
   eager-load:
     enabled: true
-    clients: order-provider
+    clients: order-comsumer
+  ConnectTimeout: 6000
+  ReadTimeout: 6000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0
 
-
-
-
-
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000

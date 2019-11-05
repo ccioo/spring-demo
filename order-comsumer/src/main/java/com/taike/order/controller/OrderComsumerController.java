@@ -31,7 +31,7 @@ public class OrderComsumerController {
         return orderPayService1.weixinpay();
     }
 
-    private String defaultError() {
-        return "内部错误";
+    public String defaultError(AlipayVO alipayVO) {
+        return "error";
     }
 }
