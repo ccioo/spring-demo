@@ -24,6 +24,7 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(value = "com.taike.**", excludeFilters =
         {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {AvoidTag.class})})
 @SpringBootApplication
+
 public class OrderComsumerApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrderComsumerApplication.class, args);
