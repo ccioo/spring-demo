@@ -11,5 +11,8 @@ repositories {
 dependencies {
     compile project(':order-api')
     compile project(':common')
+
+    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 }
 

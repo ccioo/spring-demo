@@ -48,4 +48,14 @@ hystrix:
         timeout:
         isolation:
           thread:
-            timeoutInMilliseconds: 15000
+            timeoutInMilliseconds: 1000
+  cloud:
+    circuit:
+      breaker:
+        enabled: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      force-request: true
+      force-response: true

@@ -7,8 +7,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @EnableTurbine
-@EnableDiscoveryClient
 @SpringBootApplication
+@EnableDiscoveryClient
 @EnableHystrixDashboard
 public class ToolsTurbineApplication {
     public static void main(String[] args) {
