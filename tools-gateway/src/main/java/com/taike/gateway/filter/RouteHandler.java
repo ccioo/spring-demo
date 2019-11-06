@@ -1,6 +1,7 @@
 package com.taike.gateway.filter;
 
 
+import com.taike.gateway.filter.gateway.TimeGatewayFilter;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +13,7 @@ import org.springframework.http.HttpStatus;
  * 可以对 请求目标地址 在请求之前和之后做一些事情
  */
 @Configuration
-public class RouteHandlerFilter {
+public class RouteHandler {
 
     /**
      * 请求头添加参数
@@ -86,6 +87,18 @@ public class RouteHandlerFilter {
                 .build();
     }
 
+
+    @Bean
+    public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
+        return builder.routes()
+                .route(r -> r.path("/test")
+                        .filters(f -> f.filter(new TimeGatewayFilter()))
+                        .uri("http://localhost:8001/customFilter?name=xujin")
+                        .order(0)
+                        .id("custom_filter")
+                )
+                .build();
+    }
 
 
 
