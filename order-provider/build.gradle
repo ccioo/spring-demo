@@ -15,7 +15,8 @@ dependencies {
 
     compile('org.springframework.cloud:spring-cloud-starter-openfeign')
 
-    compile group: 'com.alibaba.boot', name: 'nacos-config-spring-boot-starter', version: '0.2.1'
+//    compile group: 'com.alibaba.boot', name: 'nacos-config-spring-boot-starter', version: '0.2.1'
+//    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-config'
 
     compile('org.springframework.boot:spring-boot-starter-actuator')
 }

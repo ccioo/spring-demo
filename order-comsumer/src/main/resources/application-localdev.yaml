@@ -38,7 +38,7 @@ ribbon:
     clients: order-comsumer
   ConnectTimeout: 6000
   ReadTimeout: 6000
-  MaxAutoRetries: 0
+  MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 0
 
 hystrix:
@@ -59,3 +59,5 @@ hystrix:
       force: true
       force-request: true
       force-response: true
+  metrics:
+    polling-interval-ms: 2000

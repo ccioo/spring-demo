@@ -1,4 +1,4 @@
-package com.taike.gateway.auth;
+package com.taike.gateway.filter;
 
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -15,9 +15,10 @@ import java.net.URI;
 
 /**
  * todo 所有的请求都会经过这里
+ * 在这里可以进行权限校验
  */
 @Component
-public class GlobleAuthFilter implements GlobalFilter {
+public class PreGlobleAuthFilter implements GlobalFilter {
 
 
     private static final String HEADER_AUTH = "Authorization";
@@ -34,7 +35,6 @@ public class GlobleAuthFilter implements GlobalFilter {
 
         ServerHttpRequest.Builder mutate = request.mutate();
         //传递到请求头
-        
         mutate.header("x-user-id", "");
         mutate.header("x-user-name", "");
         mutate.header("x-user-serviceName", uri.getHost());
