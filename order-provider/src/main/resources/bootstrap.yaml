@@ -2,9 +2,8 @@ spring:
   application:
     name: order-provider
 
-
 server:
-  port: 5555
+  port: 5556
 eureka:
   client:
     serviceUrl:
