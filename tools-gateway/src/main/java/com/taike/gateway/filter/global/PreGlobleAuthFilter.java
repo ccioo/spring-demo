@@ -1,5 +1,6 @@
 package com.taike.gateway.filter.global;
 
+import com.taike.gateway.vo.User;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -29,17 +30,19 @@ public class PreGlobleAuthFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange,
                              GatewayFilterChain chain) {
-        System.out.println("进入gateway filter");
+        System.out.println("进入GlobalFilter filter");
         Route gatewayUrl = exchange.getRequiredAttribute(ServerWebExchangeUtils.GATEWAY_ROUTE_ATTR);
         URI uri = gatewayUrl.getUri();
         ServerHttpRequest request = exchange.getRequest();
         HttpHeaders header = request.getHeaders();
+        header.get("");
         //从请求头获取到token
         String token = header.getFirst(HEADER_AUTH);
-        if (StringUtils.isBlank(token)) {
-            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-            return exchange.getResponse().setComplete();
-        }
+        String userId = header.getFirst("userId");
+//        if (StringUtils.isBlank(token)) {
+//            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+//            return exchange.getResponse().setComplete();
+//        }
 
         ServerHttpRequest.Builder mutate = request.mutate();
         //传递到请求头
@@ -55,4 +58,13 @@ public class PreGlobleAuthFilter implements GlobalFilter, Ordered {
     public int getOrder() {
         return -400;
     }
+
+//    private User getUser(HttpServletRequest request) {
+//        String userid = request.getHeader("x-user-id");
+//        String username = request.getHeader("x-user-name");
+//        User user = new User();
+//        user.setUserId(userid);
+//        user.setUserName(username);
+//        return user;
+//    }
 }
