@@ -1,4 +1,4 @@
-package com.taike.gateway.filter;
+package com.taike.gateway.route;
 
 
 import com.taike.gateway.filter.gateway.TimeGatewayFilter;
@@ -13,7 +13,7 @@ import org.springframework.http.HttpStatus;
  * 可以对 请求目标地址 在请求之前和之后做一些事情
  */
 @Configuration
-public class SelfRouteHandler {
+public class RouteAndFilterHandler {
 
     /**
      * 请求头添加参数

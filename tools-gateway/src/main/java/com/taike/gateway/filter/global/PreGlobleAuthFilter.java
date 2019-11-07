@@ -39,6 +39,7 @@ public class PreGlobleAuthFilter implements GlobalFilter, Ordered {
         //从请求头获取到token
         String token = header.getFirst(HEADER_AUTH);
         String userId = header.getFirst("userId");
+
 //        if (StringUtils.isBlank(token)) {
 //            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
 //            return exchange.getResponse().setComplete();
