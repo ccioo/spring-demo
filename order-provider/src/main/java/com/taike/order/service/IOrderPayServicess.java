@@ -20,7 +20,7 @@ public class IOrderPayServicess implements IOrderPayService {
 
     @Override
     public String alipay(AlipayVO alipayVO) {
-        return "支付宝支付成功：" + port;
+        return "alipay success：" + port;
     }
 
 

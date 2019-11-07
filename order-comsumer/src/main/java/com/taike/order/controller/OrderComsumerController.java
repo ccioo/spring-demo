@@ -33,6 +33,6 @@ public class OrderComsumerController {
 
 
     public String defaultError(AlipayVO alipayVO) {
-        return "error";
+        return "fall back";
     }
 }
