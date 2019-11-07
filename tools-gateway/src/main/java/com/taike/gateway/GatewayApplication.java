@@ -11,7 +11,7 @@ import org.springframework.http.codec.ServerCodecConfigurer;
 public class GatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
+        SpringApplication.run(GatewayApplication .class, args);
     }
 
     @Bean
