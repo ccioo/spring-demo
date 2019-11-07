@@ -27,4 +27,9 @@ public class OrderProviderApplication {
         return cache;
     }
 
+    @GetMapping(value = "/jd")
+    public boolean dd() {
+        return true;
+    }
+
 }

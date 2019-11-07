@@ -23,15 +23,15 @@ spring:
           filters:
             - StripPrefix=2
 
-        - id: prefix_route
-          uri: http://localhost:8071/test/Hystrix?isSleep=true
-          predicates:
-            - Path=/test/Hystrix
-          filters:
-            - name: Hystrix # Hystrix Filter的名称
-              args: # Hystrix配置参数
-                name: fallbackcmd #HystrixCommand的名字
-                fallbackUri: forward:/fallback #fallback对应的uri
+#        - id: prefix_route
+#          uri: http://localhost:8071/test/Hystrix?isSleep=true
+#          predicates:
+#            - Path=/test/Hystrix
+#          filters:
+#            - name: Hystrix # Hystrix Filter的名称
+#              args: # Hystrix配置参数
+#                name: fallbackcmd #HystrixCommand的名字
+#                fallbackUri: forward:/fallback #fallback对应的uri
 
 # 调用多长时间 进行触发降级
 hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
