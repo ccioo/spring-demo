@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-
+    compile ('org.springframework.boot:spring-boot-starter-web')
     // spring cloud 系列
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     compile('org.springframework.cloud:spring-cloud-openfeign-core')
