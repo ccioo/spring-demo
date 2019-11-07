@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * 路由断言进行转发
  */
 @Configuration
-public class RouteHandler {
+public class RouteAndHandler {
 
     /**
      * 当访问http://localhost:8080/jd  转发到http://jd.com
@@ -29,7 +29,7 @@ public class RouteHandler {
     @Bean
     public RouteLocator customRouteLocatorheader(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("header_route", r -> r.header("X-Request-Id", "xujin")
+                .route("header_route", x -> x.header("X-Request-Id", "xujin")
                         .uri("http://localhost:8071/test/head"))
                 .build();
     }

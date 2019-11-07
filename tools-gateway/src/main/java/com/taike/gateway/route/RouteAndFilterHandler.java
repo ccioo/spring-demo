@@ -16,7 +16,7 @@ import org.springframework.http.HttpStatus;
 public class RouteAndFilterHandler {
 
     /**
-     * 请求头添加参数
+     * 请求头添加参数 的过滤器
      */
     @Bean
     public RouteLocator testRouteLocator(RouteLocatorBuilder builder) {
@@ -32,13 +32,14 @@ public class RouteAndFilterHandler {
     }
 
     /**
-     *
+     * 添加请求参数的过滤器
      */
     @Bean
     public RouteLocator testRouteLocator2(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("add_request_parameter_route", r ->
-                        r.path("/addRequestParameter").filters(f -> f.addRequestParameter("example", "ValueB"))
+                        r.path("/addRequestParameter")
+                                .filters(f -> f.addRequestParameter("example", "ValueB"))
                                 .uri("http://localhost:8071/test/addRequestParameter"))
                 .build();
     }
@@ -88,6 +89,10 @@ public class RouteAndFilterHandler {
     }
 
 
+    /**
+     *  统计某个或者某种路由的的处理时长
+     *
+     */
     @Bean
     public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
@@ -99,8 +104,6 @@ public class RouteAndFilterHandler {
                 )
                 .build();
     }
-
-
 
 
 }
