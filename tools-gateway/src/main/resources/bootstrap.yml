@@ -4,33 +4,34 @@ server:
 spring:
   application:
     name: tools-gateway
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          enabled: true
-#          lowerCaseServiceId: true #支持服务名字小写
-#      routes:
-#        - id: baidu_route #当访问http://localhost:8080/baidu,直接转发到https://www.baidu.com/
-#          uri: http://baidu.com:80/
-#          predicates:
-#            - Path=/baidu
-#            -
-#        - id: baidu_route1 #当访问http://localhost:8080/baidu/test,直接转发到https://www.baidu.com/
-#          uri: http://www.baidu.com
-#          predicates:
-#            - Path=/baidu/test/**
-#          filters:
-#            - StripPrefix=2
-#        - id: prefix_route
-#          uri: http://localhost:8071/test/Hystrix?isSleep=true
-#          predicates:
-#              - Path=/test/Hystrix
-#          filters:
-#              - name: Hystrix # Hystrix Filter的名称
-#                args: # Hystrix配置参数
-#                  name: fallbackcmd #HystrixCommand的名字
-#                  fallbackUri: forward:/fallback #fallback对应的uri
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true #支持服务名字小写
+      routes:
+        - id: baidu_route #当访问http://localhost:8080/baidu,直接转发到https://www.baidu.com/
+          uri: http://baidu.com:80/
+          predicates:
+            - Path=/baidu
+
+        - id: baidu_route1 #当访问http://localhost:8080/baidu/test,直接转发到https://www.baidu.com/
+          uri: http://www.baidu.com
+          predicates:
+            - Path=/baidu/test/**
+          filters:
+            - StripPrefix=2
+
+        - id: prefix_route
+          uri: http://localhost:8071/test/Hystrix?isSleep=true
+          predicates:
+            - Path=/test/Hystrix
+          filters:
+            - name: Hystrix # Hystrix Filter的名称
+              args: # Hystrix配置参数
+                name: fallbackcmd #HystrixCommand的名字
+                fallbackUri: forward:/fallback #fallback对应的uri
 
 # 调用多长时间 进行触发降级
 hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000
