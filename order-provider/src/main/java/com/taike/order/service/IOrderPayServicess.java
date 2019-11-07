@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-public class IOrderPayServiceController implements IOrderPayService {
+public class IOrderPayServicess implements IOrderPayService {
 
     @Value("${server.port}")
     private String port;

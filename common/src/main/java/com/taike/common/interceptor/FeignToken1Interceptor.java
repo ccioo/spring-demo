@@ -15,7 +15,7 @@ import java.util.Map;
  * Feign统一Token拦截器
  */
 @Component
-public class FeignTokenInterceptor implements RequestInterceptor {
+public class FeignToken1Interceptor implements RequestInterceptor {
 
     @Override
     public void apply(RequestTemplate requestTemplate) {

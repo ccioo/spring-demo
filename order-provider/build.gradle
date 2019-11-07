@@ -1,3 +1,6 @@
+plugins {
+    id 'java'
+}
 
 group = 'com.taike'
 version = '0.0.1-SNAPSHOT'
@@ -11,13 +14,9 @@ repositories {
 
 dependencies {
     compile project(':order-api')
-    compile project(':common')
+    compile ('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 
-    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
 
-//    compile group: 'com.alibaba.boot', name: 'nacos-config-spring-boot-starter', version: '0.2.1'
-//    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-config'
-
-    compile('org.springframework.boot:spring-boot-starter-actuator')
 }
 

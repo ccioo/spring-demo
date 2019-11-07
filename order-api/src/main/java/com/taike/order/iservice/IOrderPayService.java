@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface IOrderPayService {
 
 
-    @RequestMapping(value = "/alipay", method = RequestMethod.POST)
+    @RequestMapping(value = "/alipays", method = RequestMethod.POST)
     String alipay(@RequestBody AlipayVO alipayVO);
 
 
-    @RequestMapping(value = "/weixinpay", method = RequestMethod.GET)
+    @RequestMapping(value = "/weixinpays", method = RequestMethod.GET)
     String weixinpay();
 
 }

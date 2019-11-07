@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-public class ApplicationExceptionAdapter extends WebMvcConfigurerAdapter {
+public class ApplicationExceptionAdapter1 extends WebMvcConfigurerAdapter {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("swagger-ui.html")

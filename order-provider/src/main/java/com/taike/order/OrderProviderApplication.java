@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableHystrix
 @EnableFeignClients
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages = "com.taike.**")
+@SpringBootApplication
 @RestController
 public class OrderProviderApplication {
 
