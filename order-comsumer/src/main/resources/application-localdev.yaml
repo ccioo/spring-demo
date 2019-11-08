@@ -24,6 +24,7 @@ order-provider:
     MaxAutoRetriesNextServer: 1
     OkToRetryOnAllOperations: true
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
 management:
   security:
     enabled: false
